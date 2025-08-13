@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Us</title>
+ <link rel="icon" type="image/jpeg" href="icon.jpeg">
+  <style>
+    .contact h1 {
+      text-align: right;
+      border: 2px solid black;
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 0 auto 30px;
+      font-size: 2rem;
+      font-family: Arial, sans-serif;
+      background-color: rgba(255, 255, 255, 0.8); 
+    }
+    .about p,
+    .contact p {
+      max-width: 900px;
+      margin: 0 auto 30px;
+      font-size: 1rem;
+      line-height: 1.1;
+      color: #333;
+    }
+    .contact form {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .contact label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .contact input,
+    .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: Arial, sans-serif;
+    }
+    .contact button {
+      padding: 10px 20px;
+      background-color: #e60000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact button:hover {
+      background-color: #c40000;
+    }
+    .contact a {
+      color: #e60000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <section id="contact" class="contact">
+    <h1>Contact Us</h1>
+    <p>HR Mob No: 8835646553</p>
+    <p>Sales Man Mob No: 8778505252</p>
+    <p>Email us at: <a href="mailto:jagamnathsundaresan@gmail.com">jagamnathsundaresan@gmail.com</a></p>
+    <p>If you have any questions, suggestions, or inquiries, feel free to reach out using the form below:</p>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</body>
+</html>

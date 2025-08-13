@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Audi Car Price List</title>
+  <link rel="icon" type="image/jpeg" href="icon.jpeg">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, rgba(26, 26, 26, 0.8), rgba(51, 51, 51, 0.8)), 
+                  url("Audi A6 EV.jpg") no-repeat center center/cover;
+      color: white;
+      background-attachment: fixed;
+    }
+    header {
+      background-color: rgba(17, 34, 51, 0.8);
+      color: #fff;
+      padding: 20px 10px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ff0000;
+    }
+    h2 {
+      text-align: center;
+      padding: 20px;
+      font-size: 2.5rem;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    .car-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin: 20px;
+    }
+    .car-card {
+      background: rgba(255, 255, 255, 0.9);
+      color: black;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+      transform: translateY(30px);
+      opacity: 0;
+      animation: slideUp 0.8s ease forwards;
+    }
+    .car-card:nth-child(1) { animation-delay: 0.1s; }
+    .car-card:nth-child(2) { animation-delay: 0.2s; }
+    .car-card:nth-child(3) { animation-delay: 0.3s; }
+    .car-card:nth-child(4) { animation-delay: 0.4s; }
+    .car-card:nth-child(5) { animation-delay: 0.5s; }
+    .car-card:nth-child(6) { animation-delay: 0.6s; }
+    .car-card:nth-child(7) { animation-delay: 0.7s; }
+    .car-card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      transition: 0.3s ease;
+    }
+    @keyframes slideUp {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <section id="price" class="models">
+    <h2>Price List</h2>
+    <div class="car-grid">
+      <div class="car-card">
+        <h3>Audi A4</h3>
+        <p>₹39,90,000</p>
+      </div>
+      <div class="car-card">
+        <h3>Audi Q7</h3>
+        <p>₹57,50,000</p>
+      </div>
+      <div class="car-card">
+        <h3>Audi e-tron</h3>
+        <p>₹65,90,000</p>
+      </div>
+      <div class="car-card">
+        <h3>Audi RS7</h3>
+        <p>₹65,70,000</p>
+      </div>
+      <div class="car-card">
+        <h3>Audi A7</h3>
+        <p>₹57,50,000</p>
+      </div>
+      <div class="car-card">
+        <h3>Audi R8</h3>
+        <p>₹78,80,000</p>
+      </div>
+      <div class="car-card">
+        <h3>Audi A6 EV</h3>
+        <p>₹80,00,000</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
